@@ -5,7 +5,8 @@ yum install -y epel-release
 yum install -y vim-enhanced wget lrzsz gcc-c++ openssl-devel pcre-devel zlib-devel libselinux-python net-tools
 yum -y groupinstall 'Development Libraries' 'Development Tools'
 
-#disabled selinux
+#disabled selinux [Centos 7]
+sed -i "s/SELINUX=enforcing/SELINUX=disabled/g" `grep -rl "SELINUX=enforcing" /etc/selinux/config`
 
 #disabled firewalld
 systemctl stop firewalld

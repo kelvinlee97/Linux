@@ -12,4 +12,5 @@ sed -i "s/SELINUX=enforcing/SELINUX=disabled/g" `grep -rl "SELINUX=enforcing" /e
 systemctl stop firewalld
 systemctl disable firewalld
 
+#download apache tomcat 8
 wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.68/bin/apache-tomcat-8.5.68.tar.gz /opt

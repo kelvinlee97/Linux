@@ -2,7 +2,7 @@
 
 #install basic tools
 yum install -y epel-release
-yum install -y vim-enhanced wget lrzsz gcc-c++ openssl-devel pcre-devel zlib-devel libselinux-python net-tools
+yum install -y vim-enhanced wget lrzsz gcc-c++ openssl-devel pcre-devel zlib-devel libselinux-python net-tools dpkg
 yum -y groupinstall 'Development Libraries' 'Development Tools'
 
 #disabled selinux [Centos 7]

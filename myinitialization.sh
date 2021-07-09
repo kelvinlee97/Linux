@@ -13,8 +13,8 @@ systemctl stop firewalld
 systemctl disable firewalld
 
 #update & upgrade server
-yum update
-yum upgrade
+yum update -y
+yum upgrade -y
 
 #download apache tomcat 8
 wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.68/bin/apache-tomcat-8.5.68.tar.gz /opt

@@ -7,4 +7,4 @@ while [ $(ls -1 "$backup_dir" | wc -l) -gt "$max_backups" ]; do
     rm -r "$backup_dir/$oldest_backup"
 done
 
-echo "Backup rotation completed."
+echo "Backup rotation completed"
